@@ -614,7 +614,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
           <div class="rname"><svg class="ic ic-sm"><use href="#i-spark"/></svg> Route 2 · ons advies</div>
           <div class="rtitle">Eigen ontwerp</div>
           <div class="rsub">Een webshop die volledig van jullie is, gebouwd op een beproefd fundament. Alles kan, ook later nog.</div>
-          <div class="price">€<span data-price="maatwerk">74.500</span></div>
+          <div class="price">€<span data-price="maatwerk">82.000</span></div>
           <div class="pnote">eenmalig, excl. btw · indicatief</div>
         </div>
         <div class="r2-body">
@@ -946,7 +946,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
 </footer>
 
 <script>
-const CONFIG={validity:"15 september 2026",prices:{template:"34.500",maatwerk:"74.500"}};
+const CONFIG={validity:"15 september 2026",prices:{template:"34.500",maatwerk:"82.000"}};
 document.querySelectorAll("[data-validity]").forEach(e=>e.textContent=CONFIG.validity);
 document.querySelectorAll("[data-price]").forEach(e=>{const k=e.getAttribute("data-price");if(CONFIG.prices[k])e.textContent=CONFIG.prices[k];});
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});
