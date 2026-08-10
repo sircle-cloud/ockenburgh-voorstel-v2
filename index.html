@@ -112,6 +112,8 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .float-card .ring{width:42px;height:42px;border-radius:50%;background:var(--wash);display:grid;place-items:center;color:var(--green)}
 .float-card b{font-family:"Greycliff CF";font-size:22px;color:var(--green);line-height:1}
 .float-card span{font-size:12px;color:var(--ink-soft)}
+.float-card>div{display:flex;flex-direction:column;gap:3px}
+.float-card b{font-size:18px}
 @media(max-width:920px){.float-card{left:auto;right:20px}}
 
 /* stat strip */
@@ -370,7 +372,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
 .route2 .pnote{font-size:12.5px;color:var(--ink-soft);margin-bottom:22px}
 .route2 .pick{display:flex;justify-content:center;align-items:center;gap:8px;padding:13px;border-radius:100px;border:1px solid var(--line);color:var(--ink);font-weight:600;font-size:15px;transition:.25s}
 /* --- v2: twee-koloms routevergelijking --- */
-.r2{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
 @media(max-width:900px){.r2{grid-template-columns:1fr;max-width:560px;margin:0 auto}}
 .route2{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;display:flex;flex-direction:column;transition:.35s}
 .route2:hover{transform:translateY(-4px);box-shadow:0 40px 80px -50px rgba(1,48,37,.4)}
@@ -466,15 +468,15 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       </div>
       <div class="hero-meta r d4">
         <span><b>49</b>wensen vertaald naar één plan</span>
-        <span><b>Q1 2027</b>live, vóór het voorjaar</span>
+        <span><b>Voorjaar 2027</b>live als het seizoen start</span>
         <span><b>Samen groener</b>als kompas</span>
       </div>
     </div>
     <div class="hero-photo r d2">
       <div class="frame"><img src="assets/p_hero1.jpg" alt="Tuincentrum Ockenburgh"></div>
       <div class="float-card">
-        <span class="ring"><svg class="ic"><use href="#i-doc"/></svg></span>
-        <div><b>v2</b><span>na de sessie van 5 augustus</span></div>
+        <span class="ring"><svg class="ic"><use href="#i-star"/></svg></span>
+        <div><b>Klantenpas</b><span>jullie troef, straks ook online</span></div>
       </div>
     </div>
   </div>
@@ -494,7 +496,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       <div class="feat r d3"><span class="fic"><svg class="ic ic-lg"><use href="#i-compass"/></svg></span><h3>De doelgroep verschuift</h3><p>Van vaste bezoekers uit de buurt naar jonge gezinnen uit heel Den Haag. Die nieuwe groep vindt jullie eerst online, en oordeelt daar in seconden.</p></div>
     </div>
     <div class="feats" style="margin-top:22px">
-      <div class="feat r d1" style="grid-column:1 / -1;border-color:var(--lime)"><span class="fic" style="background:rgba(116,165,24,.14)"><svg class="ic ic-lg"><use href="#i-star"/></svg></span><h3>En dan is er de klantenpas</h3><p>Daarin zit wat geen concurrent heeft: wie jullie klanten zijn, wat ze kopen en hoe vaak ze terugkomen. Die data ligt nu stil in de kassa. De nieuwe webshop kan hem tot leven brengen: klanten zien hun punten en aankopen online, en jullie weten eindelijk wie je bereikt.</p></div>
+      <div class="feat r d1" style="grid-column:1 / -1;border-color:var(--lime)"><span class="fic" style="background:rgba(116,165,24,.14)"><svg class="ic ic-lg"><use href="#i-star"/></svg></span><h3>En dan is er de klantenpas</h3><p>Jullie eigen strategie noemt het belonen van trouwe klanten via de klantenpas als commercieel speerpunt. En terecht: daarin zit wat geen concurrent heeft. Wie jullie klanten zijn, wat ze kopen, hoe vaak ze terugkomen. Die data ligt nu stil in de kassa. De nieuwe webshop brengt het loyaliteitsprogramma tot leven: klanten zien hun punten en aankopen online, voelen zich gezien, en jullie weten eindelijk wie je bereikt. Dit is de motor achter vrijwel elke commerci&euml;le doelstelling uit het strategiedocument.</p></div>
     </div>
   </div>
 </section>
@@ -528,7 +530,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       <div class="pcard r d2"><span class="pic"><svg class="ic"><use href="#i-star"/></svg></span><h3>De rijkste data ligt stil</h3><p>Spaarpunten, aankopen, klantprofielen: alles zit in de kassa en niets ervan bereikt de klant online. De trouwste klanten merken online niet dat ze trouw zijn.</p></div>
       <div class="pcard r d3"><span class="pic"><svg class="ic"><use href="#i-plug"/></svg></span><h3>Systemen werken naast elkaar</h3><p>Kassa, bezorging en e-mail zijn losse werelden. Dat kost handwerk achter de schermen en het houdt de webshop klein.</p></div>
     </div>
-    <div class="fill-note r" style="color:var(--cream-soft)"><svg class="ic ic-sm"><use href="#i-clock"/></svg> En de klok tikt mee: het voorjaar is jullie seizoen. Wie in Q1 2027 live wil, moet dit najaar bouwen.</div>
+    <div class="fill-note r" style="color:var(--cream-soft)"><svg class="ic ic-sm"><use href="#i-clock"/></svg> En de klok tikt mee: het voorjaar is jullie seizoen. Wie bij de seizoensstart live wil, moet dit najaar beginnen.</div>
   </div>
 </section>
 
@@ -559,7 +561,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
     <div class="feats">
       <div class="feat r d1"><span class="step-n">Stap 01</span><span class="fic"><svg class="ic ic-lg"><use href="#i-handshake"/></svg></span><h3>Kickoff en nulmeting</h3><p>We leggen doelen, beeldtaal en de cijfers van nu vast: omzet, bezoekers, conversie. Dat is het startpunt waartegen we straks het resultaat afzetten.</p></div>
       <div class="feat r d2"><span class="step-n">Stap 02</span><span class="fic"><svg class="ic ic-lg"><use href="#i-spark"/></svg></span><h3>Ontwerp dat meegroeit met de winkel</h3><p>Het ontwerp loopt gelijk op met de nieuwe winkelbeleving. Jullie kijken mee op vaste momenten, met twee feedbackrondes per oplevering.</p></div>
-      <div class="feat r d3"><span class="step-n">Stap 03</span><span class="fic"><svg class="ic ic-lg"><use href="#i-store"/></svg></span><h3>Bouwen, vullen en live</h3><p>Koppeling met RetailVista, migratie van alle producten en content, testen, en live ruim vóór het drukke seizoen begint.</p></div>
+      <div class="feat r d3"><span class="step-n">Stap 03</span><span class="fic"><svg class="ic ic-lg"><use href="#i-store"/></svg></span><h3>Bouwen, vullen en live</h3><p>Koppeling met RetailVista, migratie van alle producten en content, testen, en live precies wanneer het tuinseizoen losbarst.</p></div>
     </div>
   </div>
 </section>
@@ -569,15 +571,15 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
   <div class="wrap">
     <div class="sec-head r">
       <div class="num">05 — Het advies</div>
-      <h2 style="margin-top:14px">Twee wegen, één eerlijk advies.</h2>
-      <p class="lede">Er zijn twee manieren om deze webshop te bouwen. We zetten ze allebei open op tafel, inclusief wat je bij de goedkopere weg niet krijgt.</p>
+      <h2 style="margin-top:14px">Twee routes, één eerlijk advies.</h2>
+      <p class="lede">Er zijn twee manieren om deze webshop te bouwen. We zetten ze allebei open op tafel, inclusief wat je bij de goedkopere route niet krijgt.</p>
     </div>
 
     <div class="r2">
       <!-- TEMPLATE -->
       <div class="route2 r d1">
         <div class="r2-top">
-          <div class="rname"><svg class="ic ic-sm"><use href="#i-leaf"/></svg> Weg 1 · ter vergelijking</div>
+          <div class="rname"><svg class="ic ic-sm"><use href="#i-leaf"/></svg> Route 1 · ter vergelijking</div>
           <div class="rtitle">Standaard thema</div>
           <div class="rsub">Een bestaand Shopify-thema, ingericht in jullie kleuren. Snel live, met duidelijke grenzen.</div>
           <div class="price">€<span data-price="template">34.500</span></div>
@@ -601,7 +603,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
             <li class="g-no">Geen kaartteksten met controle voor rouwwerk</li>
             <li class="g-no">Latere wensen botsen sneller met de grenzen van het thema</li>
           </ul>
-          <div class="r2-foot"><svg class="ic ic-sm"><use href="#i-clock"/></svg> Circa 14 tot 18 weken</div>
+          <div class="r2-foot"><svg class="ic ic-sm"><use href="#i-clock"/></svg> Circa 18 tot 22 weken, klaar in januari of februari</div>
         </div>
       </div>
 
@@ -609,14 +611,14 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       <div class="route2 feat r d2">
         <span class="rec">Ons advies</span>
         <div class="r2-top">
-          <div class="rname"><svg class="ic ic-sm"><use href="#i-spark"/></svg> Weg 2 · ons advies</div>
+          <div class="rname"><svg class="ic ic-sm"><use href="#i-spark"/></svg> Route 2 · ons advies</div>
           <div class="rtitle">Eigen ontwerp</div>
           <div class="rsub">Een webshop die volledig van jullie is, gebouwd op een beproefd fundament. Alles kan, ook later nog.</div>
-          <div class="price">€<span data-price="maatwerk">69.500</span></div>
+          <div class="price">€<span data-price="maatwerk">74.500</span></div>
           <div class="pnote">eenmalig, excl. btw · indicatief</div>
         </div>
         <div class="r2-body">
-          <div class="glab yes"><svg class="ic ic-sm"><use href="#i-shield"/></svg> Alles uit weg 1, plus</div>
+          <div class="glab yes"><svg class="ic ic-sm"><use href="#i-shield"/></svg> Alles uit route 1, plus</div>
           <ul class="glist">
             <li class="g-yes">Nulmeting bij de start, zodat het resultaat aantoonbaar wordt</li>
             <li class="g-yes">Volledig eigen ontwerp, afgestemd op de nieuwe winkelbeleving</li>
@@ -630,7 +632,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
             <li class="g-yes">E-mailmarketing gekoppeld, LaPosta of Klaviyo, keuze maken we samen</li>
             <li class="g-yes">Doorgroeien zonder tegen de grenzen van een thema te lopen</li>
           </ul>
-          <div class="r2-foot"><svg class="ic ic-sm"><use href="#i-clock"/></svg> Circa 20 tot 26 weken, live in Q1 2027</div>
+          <div class="r2-foot"><svg class="ic ic-sm"><use href="#i-clock"/></svg> Circa 26 tot 30 weken, klaar eind Q1, lancering begin Q2 2027</div>
         </div>
       </div>
     </div>
@@ -639,7 +641,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       <span class="fn-ic"><svg class="ic"><use href="#i-compass"/></svg></span>
       <div>
         <b>Waarom wij het eigen ontwerp adviseren</b>
-        <p>Jullie eigen strategie zegt het al: de focus van de webshop ligt niet op verkoop alleen, maar op storytelling. Dat is precies wat een standaardthema niet kan leveren. Weg 1 tonen we om het verschil eerlijk zichtbaar te maken, maar wie het merk serieus neemt, komt bij weg 2 uit. De keuze maken we samen aan tafel, niet met een knop.</p>
+        <p>Jullie eigen strategie zegt het al: de focus van de webshop ligt niet op verkoop alleen, maar op storytelling. Dat is precies wat een standaardthema niet kan leveren. Route 1 tonen we om het verschil eerlijk zichtbaar te maken, maar wie het merk serieus neemt, komt bij route 2 uit. De keuze maken we samen aan tafel, niet met een knop.</p>
       </div>
     </div>
     <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-doc"/></svg> Prijzen zijn indicatief en gebaseerd op de requirements van 5 augustus. Zodra de definitieve urenraming binnen is, leggen we de bedragen vast.</div>
@@ -671,7 +673,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
         <p style="color:var(--ink-soft)">Wij onderbouwen richting RetailVista waarom een externe klantomgeving niet past bij jullie merk, zodat jullie sterker staan in het gesprek over toegang.</p>
       </div>
     </div>
-    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-euro"/></svg> Beide wegen zijn geprijsd op scenario B. Wordt de volledige koppeling mogelijk, dan begroten we die als duidelijk afgebakende uitbreiding.</div>
+    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-euro"/></svg> Beide routes zijn geprijsd op scenario B. Wordt de volledige koppeling mogelijk, dan begroten we die als duidelijk afgebakende uitbreiding.</div>
   </div>
 </section>
 
@@ -685,7 +687,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
     </div>
     <div class="addons">
       <div class="addon r d1"><span class="incl">Aanbevolen</span><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><h3>Beeldtaal en visuele richting</h3><p>Jullie positionering staat, de vertaling naar beeld ontbreekt nog: fotografiestijl, kleurgebruik, do's en don'ts. Die leggen we samen vast, zodat het ontwerp op een fundament staat in plaats van op smaak.</p><div class="amt">Offerte op aanvraag</div></div>
-      <div class="addon r d2"><span class="incl">Aanbevolen</span><span class="aic"><svg class="ic"><use href="#i-mega"/></svg></span><h3>Campagnepakket lancering</h3><p>Advertentie- en socialmateriaal, klaar op de dag dat de shop live gaat. Zo begint de webshop met bezoekers in plaats van stilte.</p><div class="amt">Offerte op aanvraag</div></div>
+      <div class="addon r d2"><span class="incl">Aanbevolen</span><span class="aic"><svg class="ic"><use href="#i-camera"/></svg></span><h3>Brandfilm en campagne-assets</h3><p>Een gave merkfilm plus een set foto- en videomateriaal, vertaald naar advertenties en een organische contentkalender. Zo lanceert de webshop met een knal en heeft social maandenlang voer, precies als het tuinseizoen begint.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d3"><span class="aic"><svg class="ic"><use href="#i-doc"/></svg></span><h3>Extra pagina's</h3><p>Landingspagina's per doelgroep of seizoen, bovenop de basis. Voor campagnes, evenementen en de hovenierstak.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d1"><span class="aic"><svg class="ic"><use href="#i-gift"/></svg></span><h3>Cadeaukaarten</h3><p>Saldo online bekijken en digitale kaarten versturen. Haalbaar zodra duidelijk is wat RetailVista hierin kan.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d2"><span class="aic"><svg class="ic"><use href="#i-search"/></svg></span><h3>Doorlopende vindbaarheid</h3><p>Maandelijkse optimalisatie voor Google en AI-zoekmachines. Bij lancering staat alles goed, daarna is dit optioneel.</p><div class="amt">Via Sircle Grow</div></div>
@@ -741,15 +743,15 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
   <div class="wrap">
     <div class="sec-head r">
       <div class="num">10 — De planning</div>
-      <h2 style="margin-top:14px">Live vóór het voorjaar.</h2>
-      <p class="lede">Vier fases met vaste opleverpunten, startend met de kickoff en nulmeting. De ontwerpfase loopt gelijk op met de nieuwe winkelbeleving.</p>
+      <h2 style="margin-top:14px">Live als het voorjaar losbarst.</h2>
+      <p class="lede">Dit is een flinke klus, dus we plannen hem eerlijk. Vier fases met vaste opleverpunten, startend met de kickoff en nulmeting. Route 2 is eind maart klaar en lanceert begin april, precies wanneer het tuinseizoen begint.</p>
     </div>
     <div class="timeline-wrap r">
       <div class="tl-scroll">
         <div class="tl">
-          <div class="tl-row head"><div></div><div class="tl-month">Sep</div><div class="tl-month">Okt</div><div class="tl-month">Nov</div><div class="tl-month">Dec</div><div class="tl-month">Jan</div><div class="tl-month">Feb</div><div class="tl-month">Mrt</div></div>
-          <div class="tl-row"><div class="tl-rowlabel">Weg 1</div><div class="tl-bar" style="grid-column:2 / span 4"><div class="tl-seg f1" style="flex:25">1</div><div class="tl-seg f2" style="flex:35">2</div><div class="tl-seg f3" style="flex:25">3</div><div class="tl-seg f4" style="flex:15">4</div></div></div>
-          <div class="tl-row"><div class="tl-rowlabel">Weg 2</div><div class="tl-bar" style="grid-column:2 / span 6"><div class="tl-seg f1" style="flex:25">1</div><div class="tl-seg f2" style="flex:35">2</div><div class="tl-seg f3" style="flex:25">3</div><div class="tl-seg f4" style="flex:15">4</div></div></div>
+          <div class="tl-row head"><div></div><div class="tl-month">Sep</div><div class="tl-month">Okt</div><div class="tl-month">Nov</div><div class="tl-month">Dec</div><div class="tl-month">Jan</div><div class="tl-month">Feb</div><div class="tl-month">Mrt</div><div class="tl-month" style="color:var(--coral);font-weight:700">Apr · live</div></div>
+          <div class="tl-row"><div class="tl-rowlabel">Route 1</div><div class="tl-bar" style="grid-column:2 / span 5"><div class="tl-seg f1" style="flex:25">1</div><div class="tl-seg f2" style="flex:35">2</div><div class="tl-seg f3" style="flex:25">3</div><div class="tl-seg f4" style="flex:15">4</div></div></div>
+          <div class="tl-row"><div class="tl-rowlabel">Route 2</div><div class="tl-bar" style="grid-column:2 / span 7"><div class="tl-seg f1" style="flex:25">1</div><div class="tl-seg f2" style="flex:35">2</div><div class="tl-seg f3" style="flex:25">3</div><div class="tl-seg f4" style="flex:15">4</div></div></div>
         </div>
       </div>
       <div class="tl-legend">
@@ -895,7 +897,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
     </div>
     <div class="disc r d2">
       <h4>Belangrijke aannames</h4>
-      <p><b>RetailVista.</b> Beide wegen zijn geprijsd op scenario B, de basiskoppeling. Komt er volledige toegang, dan begroten we die uitbreiding apart. Blijkt de standaardkoppeling onvoldoende, dan bouwen wij een eigen tussenlaag; die hosten we op onze servers en vraagt een doorlopend Sircle Care-abonnement.</p>
+      <p><b>RetailVista.</b> Beide routes zijn geprijsd op scenario B, de basiskoppeling. Komt er volledige toegang, dan begroten we die uitbreiding apart. Blijkt de standaardkoppeling onvoldoende, dan bouwen wij een eigen tussenlaag; die hosten we op onze servers en vraagt een doorlopend Sircle Care-abonnement.</p>
       <p><b>Shopify-abonnement.</b> Vrijwel alle wensen draaien op Shopify Advanced, doordat wij het maatwerk als eigen app bouwen. Alleen bestellen op tijdvak en extra velden in het afrekenen vragen Shopify Plus. Het abonnement loopt rechtstreeks via Shopify en staat los van onze bouwkosten.</p>
       <p><b>Uren.</b> De bedragen zijn indicatief op basis van de requirements van 5 augustus. Na de definitieve urenraming leggen we de prijs vast.</p>
       <p><b>Beeld en branding.</b> Het ontwerp bouwt voort op de bestaande huisstijl en op de concepten uit het lopende winkelbelevingstraject.</p>
@@ -944,7 +946,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
 </footer>
 
 <script>
-const CONFIG={validity:"15 september 2026",prices:{template:"34.500",maatwerk:"69.500"}};
+const CONFIG={validity:"15 september 2026",prices:{template:"34.500",maatwerk:"74.500"}};
 document.querySelectorAll("[data-validity]").forEach(e=>e.textContent=CONFIG.validity);
 document.querySelectorAll("[data-price]").forEach(e=>{const k=e.getAttribute("data-price");if(CONFIG.prices[k])e.textContent=CONFIG.prices[k];});
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});
