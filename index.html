@@ -601,7 +601,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
           <div class="rname"><svg class="ic ic-sm"><use href="#i-leaf"/></svg> Route 1 · ter vergelijking</div>
           <div class="rtitle">Standaard thema</div>
           <div class="rsub">Een bestaand Shopify-thema, ingericht in jullie kleuren. Snel live, met duidelijke grenzen.</div>
-          <div class="price">€<span data-price="template">37.000</span></div>
+          <div class="price">€<span data-price="template">34.500</span></div>
           <div class="pnote">eenmalig, excl. btw</div>
         </div>
         <div class="r2-body">
@@ -1042,7 +1042,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
 </footer>
 
 <script>
-const CONFIG={validity:"15 september 2026",prices:{template:"37.000",maatwerk:"85.000"}};
+const CONFIG={validity:"15 september 2026",prices:{template:"34.500",maatwerk:"85.000"}};
 document.querySelectorAll("[data-validity]").forEach(e=>e.textContent=CONFIG.validity);
 document.querySelectorAll("[data-price]").forEach(e=>{const k=e.getAttribute("data-price");if(CONFIG.prices[k])e.textContent=CONFIG.prices[k];});
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});
