@@ -3,3 +3,5 @@ _print.html
 *.pdf
 .DS_Store
 intern_*.html
+_og.html
+assets/og.png
