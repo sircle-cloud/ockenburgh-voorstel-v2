@@ -421,6 +421,23 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
 .wins li:before{content:"✓";flex:none;width:20px;height:20px;border-radius:6px;background:rgba(143,203,166,.18);color:#8FCBA6;display:grid;place-items:center;font-size:11px;font-weight:700;margin-top:2px}
 .wins .wnote{margin-top:14px;font-size:12.5px;color:var(--cream-soft);opacity:.75}
 @media(max-width:760px){.wins ul{grid-template-columns:1fr}}
+/* groeipijlers sectie 16 */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:880px){.pillars{grid-template-columns:1fr}}
+.pillar{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;transition:.3s}
+.pillar:hover{transform:translateY(-3px);border-color:var(--green);box-shadow:0 30px 60px -45px rgba(1,48,37,.35)}
+.pillar .pic2{width:46px;height:46px;border-radius:12px;background:var(--wash);display:grid;place-items:center;color:var(--green);margin-bottom:16px}
+.pillar h3{font-size:19px;margin-bottom:4px}
+.pillar .psub{font-size:13px;color:var(--ink-soft);margin-bottom:18px}
+.pillar ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.pillar li{display:flex;gap:10px;font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+.pillar li:before{content:"✓";flex:none;width:18px;height:18px;border-radius:6px;background:var(--wash);color:var(--green);display:grid;place-items:center;font-size:10px;font-weight:700;margin-top:2px}
+.split{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.split>div{border-radius:var(--radius);padding:24px 28px;font-size:13.5px;line-height:1.6}
+.split .slab{font-family:"Greycliff CF";font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;display:block}
+.split .wij{background:var(--dark);color:var(--cream)}.split .wij .slab{color:#8FCBA6}
+.split .zelf{background:#fff;border:1px solid var(--line);color:var(--ink-soft)}.split .zelf .slab{color:var(--green)}
 </style>
 </head>
 <body>
@@ -719,8 +736,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       <div class="addon r d1"><span class="incl">Inclusief in route 2</span><span class="aic"><svg class="ic"><use href="#i-search"/></svg></span><h3>SEO-bewerking van alle teksten</h3><p>Ook de productteksten door onze SEO-molen, herstructureerd en klaar voor import.</p><div class="amt">&euro; 4.650 <span>&middot; bij route 1</span></div></div>
       <div class="addon r d3"><span class="aic"><svg class="ic"><use href="#i-doc"/></svg></span><h3>Extra pagina's</h3><p>Landingspagina's per doelgroep of seizoen, bovenop de basis.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d1"><span class="aic"><svg class="ic"><use href="#i-gift"/></svg></span><h3>Cadeaukaarten</h3><p>Saldo bekijken en digitale kaarten versturen. Haalbaar zodra RetailVista dit toelaat.</p><div class="amt">Offerte op aanvraag</div></div>
-      <div class="addon r d2"><span class="aic"><svg class="ic"><use href="#i-search"/></svg></span><h3>Doorlopende vindbaarheid</h3><p>Maandelijkse SEO-optimalisatie na de lancering.</p><div class="amt">Via Sircle Grow</div></div>
-      <div class="addon r d3"><span class="aic"><svg class="ic"><use href="#i-chart"/></svg></span><h3>Doorlopende marketing</h3><p>Advertenties en social beheren, met heldere rapportage.</p><div class="amt">Via Sircle Grow</div></div>
+      <div class="addon r d2"><span class="aic"><svg class="ic"><use href="#i-chart"/></svg></span><h3>Doorlopende groei</h3><p>SEO, advertenties en content in abonnementsvorm. Zie het hoofdstuk Na de lancering.</p><div class="amt">Abonnement</div></div>
     </div>
   </div>
 </section>
@@ -960,43 +976,48 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
     <div class="sec-head r">
       <div class="num">16 — Na de lancering</div>
       <h2 style="margin-top:14px">Zichtbaarheid bouw je door, niet in één keer.</h2>
-      <p class="lede">Drie niveaus, van licht tot volledig ontzorgd. Maandelijks opzegbaar.</p>
+      <p class="lede">Drie diensten in abonnementsvorm. Wat jullie zelf kunnen, blijven jullie zelf doen.</p>
     </div>
-    <div class="monthly">
-      <div class="mcol">
-        <div class="mr"><svg class="ic"><use href="#i-search"/></svg> Licht</div>
-        <div class="suit">Zichtbaar blijven na de lancering</div>
-        <div class="row"><span>Bestaande pagina's geoptimaliseerd</span><span>2 per maand</span></div>
-        <div class="row"><span>Technische check: snelheid, fouten, indexatie</span><span>maandelijks</span></div>
-        <div class="row"><span>Rapport met posities en bezoekers</span><span>maandelijks</span></div>
-        <div class="row"><span>Indicatie</span><span>± €450 p/m</span></div>
+    <div class="pillars">
+      <div class="pillar r d1">
+        <span class="pic2"><svg class="ic"><use href="#i-search"/></svg></span>
+        <h3>SEO</h3>
+        <div class="psub">Elke maand beter vindbaar</div>
+        <ul>
+          <li>Kern- en categoriepagina's doorlopend geoptimaliseerd</li>
+          <li>SEO-blogs en landingspagina's, geschreven op zoekvraag</li>
+          <li>Technische check: snelheid, fouten, indexatie</li>
+          <li>Maandrapport met posities en advies</li>
+        </ul>
       </div>
-      <div class="mcol feat">
-        <div class="mr"><svg class="ic"><use href="#i-chart"/></svg> Groei</div>
-        <div class="suit">Zichtbaarheid en verkeer actief laten groeien</div>
-        <div class="row"><span>Alles uit Licht</span><span>inbegrepen</span></div>
-        <div class="row"><span>Google Ads en Meta Ads beheerd</span><span>wekelijks bijgestuurd</span></div>
-        <div class="row"><span>Nieuw contentitem: blog of landingspagina</span><span>1 per maand</span></div>
-        <div class="row"><span>Rapport plus adviesgesprek</span><span>maandelijks</span></div>
-        <div class="row"><span>Indicatie</span><span>± €950 p/m</span></div>
+      <div class="pillar r d2">
+        <span class="pic2"><svg class="ic"><use href="#i-mega"/></svg></span>
+        <h3>Ads en social selling</h3>
+        <div class="psub">De juiste campagne per doelgroep</div>
+        <ul>
+          <li>Google Ads: campagnes per doelgroep en seizoen</li>
+          <li>Meta en TikTok Ads, gericht op de jonge doelgroep</li>
+          <li>Social selling: producten direct shopbaar op Instagram en TikTok</li>
+          <li>Wekelijks bijgestuurd, maandelijks rapport</li>
+        </ul>
       </div>
-      <div class="mcol">
-        <div class="mr"><svg class="ic"><use href="#i-spark"/></svg> Volledig</div>
-        <div class="suit">De hele digitale marketingmix ontzorgd</div>
-        <div class="row"><span>Alles uit Groei</span><span>inbegrepen</span></div>
-        <div class="row"><span>Social posts vanuit de beeldbank</span><span>4 per maand</span></div>
-        <div class="row"><span>Nieuwsbrief opgemaakt en verstuurd</span><span>1 per maand</span></div>
-        <div class="row"><span>Strategiesessie met de cijfers erbij</span><span>per kwartaal</span></div>
-        <div class="row"><span>Indicatie</span><span>± €1.750 p/m</span></div>
+      <div class="pillar r d3">
+        <span class="pic2"><svg class="ic"><use href="#i-camera"/></svg></span>
+        <h3>Contentmotor</h3>
+        <div class="psub">Video en fotografie in abonnementsvorm</div>
+        <ul>
+          <li>Vaste contentdagen: video en fotografie per seizoen</li>
+          <li>De beeldbank groeit door na de brandfilm</li>
+          <li>Formats voor Instagram, LinkedIn en YouTube</li>
+          <li>Kant-en-klaar aangeleverd, jullie plaatsen zelf</li>
+        </ul>
       </div>
     </div>
-    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-euro"/></svg> Richtprijs excl. advertentiebudget, rechtstreeks aan Google of Meta. Pakket stellen we samen vast.</div>
-    <div class="retainer-strip r">
-      <div>
-        <div class="mr2">Waarom nu al noemen</div>
-        <p>De brandfilm en campagne-assets zijn de bouwstenen hiervoor: je start na de lancering meteen met een beeldbank, niet met een lege pagina.</p>
-      </div>
+    <div class="split r">
+      <div class="wij"><span class="slab">Wat wij doen</span>SEO, campagnes, social selling en de contentmotor. Jullie nieuwe doelgroep zit op Instagram en TikTok; daar liggen de grootste kansen, en daar sturen we op.</div>
+      <div class="zelf"><span class="slab">Wat jullie zelf doen</span>Posts plaatsen en de nieuwsbrief versturen. Daar zijn jullie al goed in; wij zorgen dat er altijd iets te plaatsen is.</div>
     </div>
+    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-euro"/></svg> Deze abonnementen offreren we apart, na de lancering, afgestemd op budget en ambitie. Advertentiebudget betalen jullie rechtstreeks aan Google, Meta of TikTok.</div>
   </div>
 </section>
 
