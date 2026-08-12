@@ -406,6 +406,21 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
 .cta-call a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 .addon .incl{position:absolute;top:16px;right:16px;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--green);background:var(--wash);border:1px solid #CFE3C4;padding:4px 9px;border-radius:100px}
 .addon{position:relative}
+/* vijf stappen werkwijze */
+.feats.five{grid-template-columns:repeat(5,1fr);gap:14px}
+.feats.five .feat{padding:22px 18px}
+.feats.five .feat h3{font-size:16px}
+.feats.five .feat p{font-size:12.5px}
+@media(max-width:1100px){.feats.five{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.feats.five{grid-template-columns:1fr}}
+/* succescriteria in dark sectie */
+.wins{margin-top:38px;padding-top:30px;border-top:1px solid var(--line-dark)}
+.wins .wlab{font-family:"Greycliff CF";font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#8FCBA6;margin-bottom:16px}
+.wins ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin:0;padding:0}
+.wins li{display:flex;gap:11px;align-items:flex-start;font-size:14.5px;color:var(--cream-soft);line-height:1.5}
+.wins li:before{content:"✓";flex:none;width:20px;height:20px;border-radius:6px;background:rgba(143,203,166,.18);color:#8FCBA6;display:grid;place-items:center;font-size:11px;font-weight:700;margin-top:2px}
+.wins .wnote{margin-top:14px;font-size:12.5px;color:var(--cream-soft);opacity:.75}
+@media(max-width:760px){.wins ul{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -556,14 +571,17 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
   <div class="wrap">
     <div class="sec-head r">
       <div class="num">04 — Het plan</div>
-      <h2 style="margin-top:14px">Drie stappen naar het voorjaar.</h2>
-      <p class="lede">Een vast ritme met korte lijnen. Jullie weten op elk moment waar we staan en wat er volgt.</p>
+      <h2 style="margin-top:14px">In vijf stappen van concept naar live.</h2>
+      <p class="lede">Eerst scherp krijgen, dan ontwerpen, dan pas bouwen. Jullie kijken op vaste momenten mee en weten altijd wat er volgt.</p>
     </div>
-    <div class="feats">
-      <div class="feat r d1"><span class="step-n">Stap 01</span><span class="fic"><svg class="ic ic-lg"><use href="#i-handshake"/></svg></span><h3>Kickoff en nulmeting</h3><p>We leggen doelen, beeldtaal en de cijfers van nu vast: omzet, bezoekers, conversie. Dat is het startpunt waartegen we straks het resultaat afzetten.</p></div>
-      <div class="feat r d2"><span class="step-n">Stap 02</span><span class="fic"><svg class="ic ic-lg"><use href="#i-spark"/></svg></span><h3>Ontwerp dat meegroeit met de winkel</h3><p>Het ontwerp loopt gelijk op met de nieuwe winkelbeleving. Jullie kijken mee op vaste momenten, met twee feedbackrondes per oplevering.</p></div>
-      <div class="feat r d3"><span class="step-n">Stap 03</span><span class="fic"><svg class="ic ic-lg"><use href="#i-store"/></svg></span><h3>Bouwen, vullen en live</h3><p>Koppeling met RetailVista, migratie van alle producten en content, testen, en live precies wanneer het tuinseizoen losbarst.</p></div>
+    <div class="feats five">
+      <div class="feat r d1"><span class="step-n">Stap 01</span><span class="fic"><svg class="ic ic-lg"><use href="#i-handshake"/></svg></span><h3>Kickoff en schetsen</h3><p>We leggen doelen en de cijfers van nu vast (de nulmeting) en vertalen die naar sitemap en wireframes van de acht kernpagina's.</p></div>
+      <div class="feat r d2"><span class="step-n">Stap 02</span><span class="fic"><svg class="ic ic-lg"><use href="#i-compass"/></svg></span><h3>Prototype valideren</h3><p>Een klikbaar prototype maakt de webshop voelbaar voordat er iets gebouwd is. Feedback verwerken we direct, daarna staat de scope vast.</p></div>
+      <div class="feat r d3"><span class="step-n">Stap 03</span><span class="fic"><svg class="ic ic-lg"><use href="#i-spark"/></svg></span><h3>Ontwerp en componenten</h3><p>Van wireframes en huisstijl naar het definitieve ontwerp: de kernpagina's, een componentenbibliotheek en een website-styleguide.</p></div>
+      <div class="feat r d4"><span class="step-n">Stap 04</span><span class="fic"><svg class="ic ic-lg"><use href="#i-plug"/></svg></span><h3>Bouwen en koppelen</h3><p>In sprints van ontwerp naar product: de koppeling met RetailVista, de shop zelf en een beheeromgeving die jullie team snapt.</p></div>
+      <div class="feat r d5"><span class="step-n">Stap 05</span><span class="fic"><svg class="ic ic-lg"><use href="#i-store"/></svg></span><h3>Vullen, testen, live</h3><p>Alle producten en content migreren, testen met echte gebruikers, puntjes op de i en live precies wanneer het tuinseizoen losbarst.</p></div>
     </div>
+    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-chart"/></svg> En daarna begint het pas echt: meten, analyseren en verbeteren, met de nulmeting als ijkpunt.</div>
   </div>
 </section>
 
@@ -584,7 +602,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
           <div class="rtitle">Standaard thema</div>
           <div class="rsub">Een bestaand Shopify-thema, ingericht in jullie kleuren. Snel live, met duidelijke grenzen.</div>
           <div class="price">€<span data-price="template">37.000</span></div>
-          <div class="pnote">eenmalig, excl. btw · indicatief</div>
+          <div class="pnote">eenmalig, excl. btw</div>
         </div>
         <div class="r2-body">
           <div class="glab yes"><svg class="ic ic-sm"><use href="#i-shield"/></svg> Dit krijg je</div>
@@ -618,8 +636,8 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
           <div class="rname"><svg class="ic ic-sm"><use href="#i-spark"/></svg> Route 2 · ons advies</div>
           <div class="rtitle">Eigen ontwerp</div>
           <div class="rsub">Een webshop die volledig van jullie is, gebouwd op een beproefd fundament. Alles kan, ook later nog.</div>
-          <div class="price">€<span data-price="maatwerk">86.000</span></div>
-          <div class="pnote">eenmalig, excl. btw · indicatief</div>
+          <div class="price">€<span data-price="maatwerk">80.000</span></div>
+          <div class="pnote">eenmalig, excl. btw</div>
         </div>
         <div class="r2-body">
           <div class="glab yes"><svg class="ic ic-sm"><use href="#i-shield"/></svg> Alles uit route 1, plus</div>
@@ -629,7 +647,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
             <li class="g-yes">Acht kernpagina's in maatwerk, plus componentenbibliotheek en styleguide</li>
             <li class="g-yes">Storytelling en een eigen klantreis per doelgroep</li>
             <li class="g-yes">Mijn-account voorbereid op winkelaankopen en spaarpunten</li>
-            <li class="g-yes">Bestellen op datum en tijdvak, met Bumbal voor de bezorging <em style="color:var(--gold);font-style:normal;font-size:12px">· vraagt Plus</em></li>
+            <li class="g-yes">Bezorgdatum kiezen bij het afrekenen, Bumbal bevestigt het tijdvak <em style="color:var(--gold);font-style:normal;font-size:12px">· vraagt Plus</em></li>
             <li class="g-yes">Velden per producttype, inclusief kaarttekst met controle <em style="color:var(--gold);font-style:normal;font-size:12px">· vraagt Plus</em></li>
             <li class="g-yes">Zakelijke accounts: aanvraagformulier en bestellen op rekening</li>
             <li class="g-yes">Aanmelden voor workshops en evenementen</li>
@@ -646,10 +664,11 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       <span class="fn-ic"><svg class="ic"><use href="#i-compass"/></svg></span>
       <div>
         <b>Waarom wij het eigen ontwerp adviseren</b>
-        <p>Jullie eigen strategie zegt het al: de focus van de webshop ligt niet op verkoop alleen, maar op storytelling. Bij een ingekocht thema betaal je eerst om andermans architectuur te begrijpen, en daarna opnieuw bij elke thema-update die met het maatwerk botst. Bij een eigen ontwerp gaat elk uur naar Ockenburgh, zit er alleen in wat jullie echt gebruiken, en is de shop over vijf jaar nog net zo goed te onderhouden. De keuze maken we samen aan tafel, niet met een knop.</p>
+        <p>Jullie eigen strategie zegt het al: de focus van de webshop ligt niet op verkoop alleen, maar op storytelling. Bij een ingekocht thema betaal je eerst om andermans architectuur te begrijpen, en daarna opnieuw bij elke thema-update die met het maatwerk botst. Ook de eigen bouwstenen die wij maken, zoals het klantaccount met spaarpunten, passen bij een eigen ontwerp naadloos in de huisstijl; in een ingekocht thema geven zulke blokken al snel stijlbreuken. Bij een eigen ontwerp gaat elk uur naar Ockenburgh, zit er alleen in wat jullie echt gebruiken, en is de shop over vijf jaar nog net zo goed te onderhouden. De keuze maken we samen aan tafel, niet met een knop.</p>
       </div>
     </div>
-    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-doc"/></svg> Prijzen zijn indicatief en gebaseerd op de requirements van 5 augustus. Zodra de definitieve urenraming binnen is, leggen we de bedragen vast.</div>
+    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-spark"/></svg> Beide routes bevatten een volwaardig designtraject: premium Figma-ontwerp van de acht kernpagina's, voor mobiel en desktop. Wie er een visuele knaller van wil maken, kiest de Premium design-upgrade bij de add-ons hieronder.</div>
+    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-doc"/></svg> Prijzen zijn gebaseerd op de definitieve urenraming van het volledige team (augustus 2026) en gelden tot de geldigheidsdatum van dit voorstel.</div>
   </div>
 </section>
 
@@ -691,10 +710,11 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       <p class="lede">De basis dekt een complete lancering. Deze onderdelen zijn los bij te boeken, wanneer jullie er klaar voor zijn.</p>
     </div>
     <div class="addons">
-      <div class="addon r d1"><span class="incl">Aanbevolen</span><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><h3>Brand upgrade</h3><p>Jullie positionering staat, maar de huidige huisstijl draagt 'm nog niet: te ingetogen voor de ambities uit de strategie. We smeden de bestaande huisstijl om tot &eacute;&eacute;n consistent merk: merkpersoonlijkheid, kleursysteem, typografie, vormtaal, fotografie-richtlijnen en tone of voice, vastgelegd in een vernieuwde brandguide.</p><div class="amt">&euro; 8.250</div></div>
+      <div class="addon r d1"><span class="incl">Aanbevolen</span><span class="aic"><svg class="ic"><use href="#i-spark"/></svg></span><h3>Premium design-upgrade</h3><p>Beide routes bevatten het standaard designtraject: premium Figma-ontwerp van de acht kernpagina's. Deze upgrade voegt veertig extra ontwerpuren toe: meer storytelling-secties, rijkere interacties en de ruimte om er echt een visuele knaller van te maken.</p><div class="amt">&euro; 5.150</div></div>
+      <div class="addon r d2"><span class="incl">Aanbevolen</span><span class="aic"><svg class="ic"><use href="#i-compass"/></svg></span><h3>Brand upgrade</h3><p>Jullie positionering staat, maar de huidige huisstijl draagt 'm nog niet: te ingetogen voor de ambities uit de strategie. We smeden de bestaande huisstijl om tot &eacute;&eacute;n consistent merk: merkpersoonlijkheid, kleursysteem, typografie, vormtaal, fotografie-richtlijnen en tone of voice, vastgelegd in een vernieuwde brandguide.</p><div class="amt">&euro; 8.250</div></div>
       <div class="addon r d2"><span class="aic"><svg class="ic"><use href="#i-store"/></svg></span><h3>Merk in de winkel</h3><p>Het vernieuwde merk doorgevoerd op alles wat klanten in handen krijgen: visitekaartjes, advertenties, flyers, merchandise, briefpapier, e-mailhandtekening en materiaal op locatie zoals vlaggen en borden.</p><div class="amt">&euro; 5.400</div></div>
-      <div class="addon r d3"><span class="aic"><svg class="ic"><use href="#i-grid"/></svg></span><h3>Merk online</h3><p>Kant-en-klare templates voor social feed, stories en reels (Facebook, Instagram, TikTok, LinkedIn), advertentiesjablonen voor Meta en Google, displaybanners en een modulaire nieuwsbrief. Zo ziet elke post er meteen goed uit.</p><div class="amt">&euro; 7.750</div></div>
-      <div class="addon r d2"><span class="incl">Aanbevolen</span><span class="aic"><svg class="ic"><use href="#i-camera"/></svg></span><h3>Brandfilm en campagne-assets</h3><p>Eén productiedag levert een korte merkfilm op, plus 15 tot 20 losse verhaal-snippets: klein, echt, herkenbaar. Genoeg materiaal voor een beeldbank die maanden meegaat op Instagram, LinkedIn, YouTube en de webshop, in dezelfde kleur en toon overal. Inclusief een ad-set voor de lancering op Meta en Google.</p><div class="amt">Offerte op aanvraag</div></div>
+      <div class="addon r d3"><span class="aic"><svg class="ic"><use href="#i-grid"/></svg></span><h3>Campagne-assets online</h3><p>Kant-en-klare templates voor social feed, stories en reels (Facebook, Instagram, TikTok, LinkedIn), advertentiesjablonen voor Meta en Google met actievarianten, displaybanners in alle gangbare formaten en een modulaire nieuwsbrief. Zo ziet elke post en elke advertentie er meteen goed uit.</p><div class="amt">&euro; 7.750</div></div>
+      <div class="addon r d2"><span class="incl">Aanbevolen</span><span class="aic"><svg class="ic"><use href="#i-camera"/></svg></span><h3>Brandfilm en verhaal-snippets</h3><p>Eén productiedag levert een korte merkfilm op, plus 15 tot 20 losse verhaal-snippets: klein, echt, herkenbaar. Genoeg materiaal voor een beeldbank die maanden meegaat op Instagram, LinkedIn, YouTube en de webshop, in dezelfde kleur en toon overal. Inclusief een ad-set voor de lancering op Meta en Google. De prijs hangt af van de hoeveelheid maatwerk en het aantal snippets.</p><div class="amt">&euro; 8.500 tot 15.000</div></div>
       <div class="addon r d3"><span class="aic"><svg class="ic"><use href="#i-doc"/></svg></span><h3>Extra pagina's</h3><p>Landingspagina's per doelgroep of seizoen, bovenop de basis. Voor campagnes, evenementen en de hovenierstak.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d1"><span class="aic"><svg class="ic"><use href="#i-gift"/></svg></span><h3>Cadeaukaarten</h3><p>Saldo online bekijken en digitale kaarten versturen. Haalbaar zodra duidelijk is wat RetailVista hierin kan.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d2"><span class="aic"><svg class="ic"><use href="#i-search"/></svg></span><h3>Doorlopende vindbaarheid</h3><p>Maandelijkse optimalisatie voor Google en AI-zoekmachines. Bij lancering staat alles goed, daarna is dit optioneel.</p><div class="amt">Via Sircle Grow</div></div>
@@ -708,11 +728,11 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
   <div class="wrap">
     <div class="sec-head r">
       <div class="num">08 — Bewust voor later</div>
-      <h2 style="margin-top:14px">Wat we nu niet doen, en waarom.</h2>
-      <p class="lede">Deze drie punten laten we bewust liggen. Ze zijn nu niet haalbaar of nog niet nodig, en ze zouden de lancering alleen vertragen.</p>
+      <h2 style="margin-top:14px">Een raket in twee trappen.</h2>
+      <p class="lede">2026 en begin 2027 staan in het teken van het fundament: webshop, ontwerpsysteem, componentenbibliotheek en de koppeling met RetailVista. Daarna bouwt de tweede trap daarop voort: optimaliseren en nieuwe functionaliteit, op basis van echte data. Deze drie punten horen bewust bij die tweede trap.</p>
     </div>
     <div class="feats">
-      <div class="feat r d1"><span class="fic"><svg class="ic ic-lg"><use href="#i-truck"/></svg></span><h3>Bezorgzones via Bumbal</h3><p>Tijdvakken die meebewegen met de bezorgzone. We starten met vaste datum- en tijdvakkeuze en breiden uit zodra de shop draait.</p></div>
+      <div class="feat r d1"><span class="fic"><svg class="ic ic-lg"><use href="#i-truck"/></svg></span><h3>Bezorgzones via Bumbal</h3><p>Tijdvakken die meebewegen met de bezorgzone. We starten met een bezorgdatum in het afrekenen; Bumbal bevestigt het tijdvak per e-mail.</p></div>
       <div class="feat r d2"><span class="fic"><svg class="ic ic-lg"><use href="#i-grid"/></svg></span><h3>Productdatabeheer (PIM)</h3><p>Een centrale bron voor productteksten en beeld. De beschikbare systemen sluiten nog niet goed aan op RetailVista, dus dit parkeren we.</p></div>
       <div class="feat r d3"><span class="fic"><svg class="ic ic-lg"><use href="#i-plug"/></svg></span><h3>Gedetailleerde orderstatussen</h3><p>RetailVista kent nu alleen bevestigd en ontvangen. Fijnmaziger volgen vraagt eerst een uitbreiding aan hun kant.</p></div>
     </div>
@@ -769,7 +789,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       </div>
     </div>
     <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-calendar"/></svg> Startdatum in overleg, de maanden schuiven mee. Elke fase staat gelijk aan 25% van de facturatie.</div>
-    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-compass"/></svg> Kiezen jullie voor de beeldtaal-sessie, reken dan op enkele weken extra vooraf. De bouw start deels parallel zodra het ontwerp akkoord is.</div>
+    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-compass"/></svg> Kiezen jullie voor de Brand upgrade of de Premium design-upgrade, reken dan op enkele weken extra vooraf. De bouw start deels parallel zodra het ontwerp akkoord is.</div>
   </div>
 </section>
 
@@ -787,6 +807,20 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       </div>
     </div>
     <div class="success-photo r d2"><img src="assets/p_hero2.jpg" alt="Ockenburgh sfeer"></div>
+  </div>
+  <div class="wrap">
+    <div class="wins r">
+      <div class="wlab">Zo weten we straks dat het geslaagd is</div>
+      <ul>
+        <li>Klanten vinden en bestellen planten, tuinmeubelen en cadeaus zonder moeite</li>
+        <li>De productmigratie verloopt soepel, zonder verlies van vindbaarheid</li>
+        <li>Het team beheert de webshop en producten zelf, zonder specialist</li>
+        <li>De uitstraling van de webshop klopt met wie Ockenburgh is</li>
+        <li>Er komen aantoonbaar meer bestellingen binnen</li>
+        <li>Ockenburgh claimt een sterkere positie in de eigen niche</li>
+      </ul>
+      <div class="wnote">De laatste twee maken we concreet met de cijfers uit de nulmeting bij de kickoff.</div>
+    </div>
   </div>
 </section>
 
@@ -906,7 +940,9 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
       <h4>Belangrijke aannames</h4>
       <p><b>RetailVista.</b> Beide routes zijn geprijsd op scenario B, de basiskoppeling. Komt er volledige toegang, dan begroten we die uitbreiding apart. Blijkt de standaardkoppeling onvoldoende, dan bouwen wij een eigen tussenlaag; die hosten we op onze servers en vraagt een doorlopend Sircle Care-abonnement.</p>
       <p><b>Shopify-abonnement.</b> Vrijwel alle wensen draaien op Shopify Advanced, doordat wij het maatwerk als eigen app bouwen. Alleen bestellen op tijdvak en extra velden in het afrekenen vragen Shopify Plus. Het abonnement loopt rechtstreeks via Shopify en staat los van onze bouwkosten.</p>
-      <p><b>Uren.</b> De bedragen zijn indicatief op basis van de requirements van 5 augustus. Na de definitieve urenraming leggen we de prijs vast.</p>
+      <p><b>Uren.</b> De bedragen zijn gebaseerd op de definitieve urenraming van het volledige team, opgesteld in augustus 2026 op basis van de requirements van 5 augustus. Ze gelden tot de geldigheidsdatum van dit voorstel.</p>
+      <p><b>Bezorging.</b> In het afrekenen kiest de klant een bezorgdatum; het exacte tijdvak bevestigt Bumbal per e-mail. Tijdvakken per bezorgzone zijn een latere uitbreiding.</p>
+      <p><b>E-mailmarketing.</b> De keuze tussen LaPosta en Klaviyo maken we samen bij de kickoff, zodat die aansluit op het lopende nieuwsbrieftraject.</p>
       <p><b>Reserveringen.</b> De precieze vorm van het workshop- en eventsysteem bepalen we samen in de kickoff. De huidige raming gaat uit van een standaardoplossing.</p>
       <p><b>Ontwerpscope.</b> Beide routes gaan uit van acht kernpagina's: homepage, categorie, productdetail, over ons, contact, blogoverzicht, blogdetail en winkelmandje, telkens voor mobiel en desktop. Extra pagina's zijn los bij te boeken. De afrekenpagina van Shopify volgt de website-styleguide; wil je die volledig op maat, dan begroten we dat apart.</p>
       <p><b>Aanlevering.</b> We gaan ervan uit dat de huidige brandguide, eigen fotografie, teksten en weblettertypes beschikbaar zijn bij de start. Ontbreekt er iets, dan bespreken we samen wie dat oppakt.</p>
@@ -921,42 +957,41 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
     <div class="sec-head r">
       <div class="num">16 — Na de lancering</div>
       <h2 style="margin-top:14px">Zichtbaarheid bouw je door, niet in één keer.</h2>
-      <p class="lede">SEO, advertenties en content werken het best samen, niet los van elkaar. Drie niveaus, van licht tot volledig ontzorgd. Los te boeken via Sircle Grow, geen verplichting.</p>
+      <p class="lede">SEO, advertenties en content werken het best samen, niet los van elkaar. Drie niveaus, van licht tot volledig ontzorgd. Maandelijks opzegbaar, geen verplichting.</p>
     </div>
     <div class="monthly">
       <div class="mcol">
         <div class="mr"><svg class="ic"><use href="#i-search"/></svg> Licht</div>
         <div class="suit">Zichtbaar blijven na de lancering</div>
-        <div class="row"><span>SEO-optimalisatie</span><span>maandelijks</span></div>
-        <div class="row"><span>Advertenties</span><span>&ndash;</span></div>
-        <div class="row"><span>Content en beeld</span><span>&ndash;</span></div>
-        <div class="row"><span>Indicatie</span><span>vanaf ± €450 p/m</span></div>
+        <div class="row"><span>Bestaande pagina's geoptimaliseerd</span><span>2 per maand</span></div>
+        <div class="row"><span>Technische check: snelheid, fouten, indexatie</span><span>maandelijks</span></div>
+        <div class="row"><span>Rapport met posities en bezoekers</span><span>maandelijks</span></div>
+        <div class="row"><span>Indicatie</span><span>± €450 p/m</span></div>
       </div>
       <div class="mcol feat">
         <div class="mr"><svg class="ic"><use href="#i-chart"/></svg> Groei</div>
         <div class="suit">Zichtbaarheid en verkeer actief laten groeien</div>
-        <div class="row"><span>SEO-optimalisatie</span><span>maandelijks</span></div>
-        <div class="row"><span>Google en Meta Ads</span><span>beheerd</span></div>
-        <div class="row"><span>Content en beeld</span><span>basis</span></div>
-        <div class="row"><span>Indicatie</span><span>vanaf ± €950 p/m</span></div>
+        <div class="row"><span>Alles uit Licht</span><span>inbegrepen</span></div>
+        <div class="row"><span>Google Ads en Meta Ads beheerd</span><span>wekelijks bijgestuurd</span></div>
+        <div class="row"><span>Nieuw contentitem: blog of landingspagina</span><span>1 per maand</span></div>
+        <div class="row"><span>Rapport plus adviesgesprek</span><span>maandelijks</span></div>
+        <div class="row"><span>Indicatie</span><span>± €950 p/m</span></div>
       </div>
       <div class="mcol">
         <div class="mr"><svg class="ic"><use href="#i-spark"/></svg> Volledig</div>
         <div class="suit">De hele digitale marketingmix ontzorgd</div>
-        <div class="row"><span>SEO-optimalisatie</span><span>maandelijks</span></div>
-        <div class="row"><span>Google, Meta en social Ads</span><span>beheerd</span></div>
-        <div class="row"><span>Content, beeld en beeldbank</span><span>doorlopend</span></div>
-        <div class="row"><span>Indicatie</span><span>vanaf ± €1.750 p/m</span></div>
+        <div class="row"><span>Alles uit Groei</span><span>inbegrepen</span></div>
+        <div class="row"><span>Social posts vanuit de beeldbank</span><span>4 per maand</span></div>
+        <div class="row"><span>Nieuwsbrief opgemaakt en verstuurd</span><span>1 per maand</span></div>
+        <div class="row"><span>Strategiesessie met de cijfers erbij</span><span>per kwartaal</span></div>
+        <div class="row"><span>Indicatie</span><span>± €1.750 p/m</span></div>
       </div>
     </div>
     <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-euro"/></svg> Bedragen zijn een richtprijs excl. advertentiebudget, dat betalen jullie rechtstreeks aan Google of Meta. Definitieve pakketten stellen we samen met jullie budget en ambitie vast.</div>
     <div class="retainer-strip r">
       <div>
         <div class="mr2">Waarom nu al noemen</div>
-        <p>De brandfilm en campagne-assets uit de add-ons zijn de bouwstenen voor precies dit: een beeldbank die maanden meegaat. Zo weten jullie na de lancering meteen waar je op verder bouwt, in plaats van opnieuw te beginnen.</p>
-      </div>
-      <div class="ret-links">
-        <a href="https://sircle.agency/sirclegrowth.html" target="_blank" rel="noopener">Bekijk Sircle Grow <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+        <p>De brandfilm en de campagne-assets uit de add-ons zijn de bouwstenen voor precies dit: een beeldbank en templates die maanden meegaan. Zo weten jullie na de lancering meteen waar je op verder bouwt, in plaats van opnieuw te beginnen.</p>
       </div>
     </div>
   </div>
@@ -1003,7 +1038,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
 </footer>
 
 <script>
-const CONFIG={validity:"15 september 2026",prices:{template:"37.000",maatwerk:"86.000"}};
+const CONFIG={validity:"15 september 2026",prices:{template:"37.000",maatwerk:"80.000"}};
 document.querySelectorAll("[data-validity]").forEach(e=>e.textContent=CONFIG.validity);
 document.querySelectorAll("[data-price]").forEach(e=>{const k=e.getAttribute("data-price");if(CONFIG.prices[k])e.textContent=CONFIG.prices[k];});
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});
