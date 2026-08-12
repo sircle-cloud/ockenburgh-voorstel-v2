@@ -438,6 +438,14 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
 .split .slab{font-family:"Greycliff CF";font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;display:block}
 .split .wij{background:var(--dark);color:var(--cream)}.split .wij .slab{color:#8FCBA6}
 .split .zelf{background:#fff;border:1px solid var(--line);color:var(--ink-soft)}.split .zelf .slab{color:var(--green)}
+/* prijsverschil-uitleg sectie 05 */
+.gap{margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 30px}
+.gap .glab2{font-family:"Greycliff CF";font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:18px}
+.gap .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.gap .amt2{font-family:"Greycliff CF";font-size:24px;color:var(--dark)}
+.gap .cols b{display:block;font-size:13.5px;margin-top:2px}
+.gap .cols p{font-size:12.5px;color:var(--ink-soft);line-height:1.5;margin-top:5px}
+@media(max-width:760px){.gap .cols{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -676,6 +684,15 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
           </ul>
           <div class="r2-foot"><svg class="ic ic-sm"><use href="#i-clock"/></svg> Circa 26 tot 30 weken, klaar eind Q1, lancering begin Q2 2027</div>
         </div>
+      </div>
+    </div>
+
+    <div class="gap r">
+      <div class="glab2">Waar zit het verschil?</div>
+      <div class="cols">
+        <div><span class="amt2">± €30.000</span><b>Techniek</b><p>Klantaccount met spaarpunten, zakelijke accounts, bezorgdatum, workshops, rechten per medewerker, transactionele mail.</p></div>
+        <div><span class="amt2">± €12.000</span><b>Eigen ontwerp</b><p>Acht kernpagina's op maat, componentenbibliotheek en styleguide, door onze e-commerce designer.</p></div>
+        <div><span class="amt2">± €8.500</span><b>Content en regie</b><p>Alle teksten door de SEO-bewerking, beeldcuratie per pagina en langere begeleiding.</p></div>
       </div>
     </div>
 
