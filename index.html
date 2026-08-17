@@ -462,6 +462,24 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
 .gap .cols b{display:block;font-size:13.5px;margin-top:2px}
 .gap .cols p{font-size:12.5px;color:var(--ink-soft);line-height:1.5;margin-top:5px}
 @media(max-width:760px){.gap .cols{grid-template-columns:1fr}}
+/* donkere aandachtsblokken */
+.darknote{margin-top:22px;background:var(--dark);color:var(--cream);border-radius:var(--radius);padding:30px 34px;display:flex;gap:20px;align-items:flex-start}
+.darknote .dn-ic{width:44px;height:44px;border-radius:12px;background:rgba(143,203,166,.16);color:#8FCBA6;display:grid;place-items:center;flex:none}
+.darknote b{display:block;font-family:"Greycliff CF";font-size:17px;margin-bottom:7px}
+.darknote p{font-size:14px;line-height:1.65;color:var(--cream-soft)}
+@media(max-width:640px){.darknote{flex-direction:column;padding:26px 24px}}
+/* platform: besparing en plus-vereisten */
+.savebox{background:var(--dark);color:var(--cream);border-radius:var(--radius);padding:26px 28px;margin-bottom:16px}
+.savebox .bignum{font-family:"Greycliff CF";font-size:40px;line-height:1;color:#8FCBA6;display:block}
+.savebox b{display:block;font-family:"Greycliff CF";font-size:15px;margin:10px 0 6px}
+.savebox p{font-size:13.5px;line-height:1.6;color:var(--cream-soft)}
+.pluslist{margin-top:16px;background:#fff;border:1px solid #E3D3A6;border-radius:var(--radius);padding:24px 26px}
+.pluslist .pl-lab{font-family:"Greycliff CF";font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#9A6E02;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.pluslist ul{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:12px}
+.pluslist li{display:flex;gap:11px;font-size:13.5px;color:var(--ink-soft);line-height:1.55}
+.pluslist li:before{content:"!";flex:none;width:19px;height:19px;border-radius:6px;background:#FBF3DC;color:#9A6E02;display:grid;place-items:center;font-size:11px;font-weight:700;margin-top:2px}
+.pluslist li b{color:var(--ink)}
+.pluslist .pl-foot{font-size:12.5px;color:var(--ink-soft);padding-top:12px;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -632,7 +650,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
     <div class="sec-head r">
       <div class="num">05 — Het advies</div>
       <h2 style="margin-top:14px">Twee routes, één eerlijk advies.</h2>
-      <p class="lede">Beide open op tafel, inclusief wat er bij de goedkopere route buiten valt.</p>
+      <p class="lede">Beide open op tafel, met ons advies en de opbouw van het prijsverschil erbij.</p>
     </div>
 
     <div class="r2">
@@ -657,15 +675,6 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
             <li class="g-yes">Blog- en inspiratiesectie en cross-selling</li>
             <li class="g-yes">Kern- en categoriepagina's herschreven op SEO-structuur, productteksten migreren 1-op-1 mee</li>
             <li class="g-yes">Voorraadindicatie op productpagina's en koppeling met Google Mijn Bedrijf</li>
-          </ul>
-          <div class="glab no"><svg class="ic ic-sm"><use href="#i-clock"/></svg> Wat buiten deze route valt</div>
-          <ul class="glist">
-            <li class="g-no">Geen eigen ontwerp: het thema bepaalt hoe jullie eruitzien</li>
-            <li class="g-no">Geen storytelling of eigen klantreis per doelgroep</li>
-            <li class="g-no">Geen mijn-account met winkelaankopen en spaarpunten</li>
-            <li class="g-no">Geen bestellen op tijdvak of velden per producttype</li>
-            <li class="g-no">Geen kaartteksten met controle voor rouwwerk</li>
-            <li class="g-no">Latere wensen bouwen tegen andermans thema in; een update kan dat maatwerk breken</li>
           </ul>
           <div class="r2-foot"><svg class="ic ic-sm"><use href="#i-clock"/></svg> Circa 18 tot 22 weken, klaar in januari of februari</div>
         </div>
@@ -718,6 +727,22 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
         <p>Jullie strategie draait om storytelling. Bij een ingekocht thema betalen jullie eerst om andermans architectuur te begrijpen, en opnieuw bij elke update die met maatwerk botst. Eigen bouwstenen zoals het klantaccount passen dan ook minder naadloos: bij een eigen ontwerp geen stijlbreuk, bij een ingekocht thema wel. Elk uur gaat naar Ockenburgh, en de shop is over vijf jaar nog net zo goed te onderhouden. De keuze maken we samen aan tafel.</p>
       </div>
     </div>
+    <div class="darknote r">
+      <span class="dn-ic"><svg class="ic"><use href="#i-clock"/></svg></span>
+      <div>
+        <b>Later alsnog overstappen kost meer dan nu goed beginnen</b>
+        <p>Een ingekocht thema verhuist niet mee naar een eigen ontwerp. Kiezen jullie over twee jaar alsnog voor maatwerk, dan is dat opnieuw bouwen en vervalt het werk van nu grotendeels. Daar komt bij dat een thema altijd secties en code meedraagt die jullie nooit gebruiken, verborgen in de website. Dat maakt de shop trager, en snelheid weegt mee in Google. Wat wij bouwen bevat alleen wat Ockenburgh daadwerkelijk gebruikt.</p>
+      </div>
+    </div>
+
+    <div class="darknote r" style="background:var(--green)">
+      <span class="dn-ic" style="background:rgba(238,95,98,.2);color:#FFB3B4"><svg class="ic"><use href="#i-handshake"/></svg></span>
+      <div>
+        <b>Zit er een plafond op het budget?</b>
+        <p>Zeg dat gerust, dan kijken we samen wat er nu meegaat en wat we parkeren. Het fundament zetten we dan volledig neer: het eigen ontwerp, de RetailVista-koppeling en de migratie. Onderdelen als zakelijke accounts, workshops of de checkout-uitbreidingen kunnen prima een jaar later, wanneer de budgetten voor 2027 op tafel liggen. Zo bouwen we in fases verder op hetzelfde fundament, in plaats van iets neer te zetten dat later opnieuw moet.</p>
+      </div>
+    </div>
+
     <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-spark"/></svg> Kort gezegd: bij route 1 bepaalt het thema het ontwerp, bij route 2 ontwerpt onze designer de acht kernpagina's volledig op maat. De Premium design-upgrade voegt daar veertig ontwerpuren aan toe: rijkere storytelling met fotografie, video, animatie en scrolleffecten, extra ontworpen contentsecties per pagina, en UX en UI uitgewerkt tot in de kleine interacties.</div>
   </div>
 </section>
@@ -799,10 +824,21 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:60px 0 38px;font
     </div>
     <div class="arch-grid">
       <div class="r">
+        <div class="savebox">
+          <span class="bignum">± €22.400</span>
+          <b>per jaar bespaard op licentiekosten</b>
+          <p>Dit was een van de verrassingen tijdens het uitzoekwerk: doordat wij het maatwerk als eigen app bouwen, draait vrijwel de hele wensenlijst op Shopify Advanced in plaats van Plus.</p>
+        </div>
         <div class="principle"><svg class="ic"><use href="#i-shield"/></svg> RetailVista, mijn-account, spaarpunten en zakelijke accounts draaien op Advanced.</div>
         <div class="principle"><svg class="ic"><use href="#i-plug"/></svg> Wij bouwen die functies als eigen app. Geen dure licentie nodig.</div>
-        <div class="principle"><svg class="ic"><use href="#i-truck"/></svg> Alleen tijdvakken en checkout-velden vragen echt om Plus.</div>
-        <div class="principle"><svg class="ic"><use href="#i-euro"/></svg> Dat scheelt ruim €22.000 per jaar. Later opschalen kan altijd.</div>
+        <div class="pluslist">
+          <div class="pl-lab"><svg class="ic ic-sm"><use href="#i-spark"/></svg> Alleen deze twee wensen vragen Plus</div>
+          <ul>
+            <li><span><b>Bezorgdatum en tijdvak in het afrekenen.</b> Klanten kiezen zelf wanneer de bestelling komt, Bumbal bevestigt het tijdvak.</span></li>
+            <li><span><b>Extra velden in het afrekenen.</b> Denk aan de kaarttekst bij rouwwerk, met controle vooraf.</span></li>
+          </ul>
+          <div class="pl-foot">Beide horen bij route 2. Willen jullie ze niet meteen, dan volstaat Advanced en schalen we later op.</div>
+        </div>
       </div>
       <div class="r d2">
         <div class="monthly" style="grid-template-columns:1fr">
