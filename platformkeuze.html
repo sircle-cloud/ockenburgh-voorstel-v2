@@ -108,6 +108,18 @@ header .lede{color:var(--cream-soft);margin-top:22px;position:relative;z-index:1
 .blocked{background:#FDEDED;border:1px dashed #E7A9AA;border-radius:14px;padding:16px 20px;display:flex;gap:12px;align-items:flex-start;font-size:13.5px;color:#8E2E31;line-height:1.55}
 .blocked svg{color:var(--coral);margin-top:2px}
 
+/* QUOTE */
+.quote{background:#fff;border:1px solid var(--line);border-left:4px solid var(--lime);border-radius:16px;padding:30px 34px;margin-top:22px}
+.s-dark .quote{background:rgba(244,239,226,.06);border-color:var(--line-dark);border-left-color:var(--mint)}
+.quote .qlab{display:flex;align-items:center;gap:9px;font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--green);margin-bottom:16px}
+.s-dark .quote .qlab{color:var(--mint)}
+.quote blockquote{font-size:clamp(16.5px,1.8vw,20px);line-height:1.55;font-weight:500;color:var(--ink);letter-spacing:-.01em}
+.s-dark .quote blockquote{color:var(--cream)}
+.quote blockquote+blockquote{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.s-dark .quote blockquote+blockquote{border-top-color:var(--line-dark)}
+.quote cite{display:block;font-style:normal;font-size:12.5px;color:var(--ink-soft);margin-top:14px}
+.s-dark .quote cite{color:var(--cream-soft)}
+
 /* BARS */
 .bars{display:grid;gap:22px;margin-top:6px}
 .bar b{display:block;font-size:14px;margin-bottom:9px;color:var(--cream)}
@@ -254,8 +266,16 @@ footer a{color:var(--cream);text-decoration:underline}
     <div class="sec-head r">
       <div class="num">01 — De RetailVista-koppeling</div>
       <h2 style="margin-top:16px">De koppeling bestaat. Nu wat hij doet.</h2>
-      <p class="lede">RetailVista biedt een standaardintegratie met Magento 2. Voor Shopify is die er niet, daar bouwen wij hem zelf. Dat is een echt voordeel voor Magento. De vraag is wat je met die standaardkoppeling binnenhaalt. De documentatie van Nedfox is daar helder over.</p>
+      <p class="lede">RetailVista biedt een standaardintegratie met Magento 2. Voor Shopify is die er niet, daar bouwen wij hem zelf. Dat scheelt bouwwerk en is een echt voordeel voor Magento. Maar het is geen voorwaarde, en dat zegt Nedfox zelf.</p>
     </div>
+
+    <div class="quote r">
+      <div class="qlab"><svg class="ic ic-sm"><use href="#i-doc"/></svg> Uit de documentatie van Nedfox</div>
+      <blockquote>&ldquo;In principe is koppeling met elke webshop mogelijk. Vanwege het open karakter van het RetailVista retail service platform Retail3000 is het bovendien mogelijk voor elke partij om een hoogwaardige koppeling te leggen met RetailVista.&rdquo;</blockquote>
+      <blockquote>&ldquo;We offer the possibility to create any kind of API integration, but always based on fair use policy.&rdquo;</blockquote>
+      <cite>Nedfox, documentatie webshopkoppelingen en API-documentatie Retail3000</cite>
+    </div>
+    <div class="foot-note" style="margin-bottom:26px"><svg class="ic ic-sm"><use href="#i-compass"/></svg> Met andere woorden: de keuze voor Shopify staat een volwaardige koppeling niet in de weg. Het verschil zit in wie hem bouwt, niet in of het mag of kan.</div>
 
     <div class="flow r">
       <div class="fbox">
@@ -286,7 +306,7 @@ footer a{color:var(--cream);text-decoration:underline}
     <div class="sec-head r">
       <div class="num">02 — De klantenpas</div>
       <h2 style="margin-top:16px">Het goede nieuws: online kan het wél.</h2>
-      <p class="lede">RetailVista heeft een Spaarkaart-module, en die kán online ontsloten worden. Garden Connect doet dat vandaag al: klanten loggen in, activeren hun kaart, zien en sparen punten, koppelen ontbrekende transacties alsnog en gebruiken een digitale cadeaukaart. Er is dus geen technisch obstakel, alleen een kwestie van toegang.</p>
+      <p class="lede">RetailVista heeft een Spaarkaart-module, en die kán online ontsloten worden. Garden Connect doet dat vandaag al: klanten loggen in, activeren hun kaart, zien en sparen punten, koppelen ontbrekende transacties alsnog en gebruiken een digitale cadeaukaart. Nedfox schrijft bovendien dat hun REST API toegang geeft tot alle entiteiten van Retail3000 en dat die data ook voor externe ontwikkelaars beschikbaar is. Er is dus geen technisch obstakel, alleen een kwestie van toegang en afspraken.</p>
     </div>
     <div class="grid2">
       <div class="card r d1">
@@ -329,7 +349,7 @@ footer a{color:var(--cream);text-decoration:underline}
         <span class="cic"><svg class="ic ic-lg"><use href="#i-plug"/></svg></span>
         <span class="tag g">Voordeel Magento</span>
         <h3>Koppeling ligt klaar</h3>
-        <p>De basiskoppeling met RetailVista bestaat al. Op Shopify bouwen wij die, en dat zit in onze begroting.</p>
+        <p>De basiskoppeling met RetailVista bestaat al, dat scheelt bouwwerk. Op Shopify bouwen wij die, en dat zit in onze begroting. Nedfox bevestigt dat elke partij een hoogwaardige koppeling mag leggen, dus het is een voorsprong en geen voorwaarde.</p>
       </div>
       <div class="card r d2">
         <span class="cic"><svg class="ic ic-lg"><use href="#i-cart"/></svg></span>
@@ -583,6 +603,8 @@ footer a{color:var(--cream);text-decoration:underline}
     </div>
     <ul class="src r">
       <li><a href="https://docs.retailvista.net/docs/hoe-moet-een-integratie-tussen-retailvista-en-magento2-ingericht-worden" target="_blank" rel="noopener">Nedfox: inrichting van de RetailVista-Magento2 integratie</a></li>
+      <li><a href="https://docs.retailvista.net/docs/met-welke-webshop-is-koppeling-mogelijk" target="_blank" rel="noopener">Nedfox: met welke webshop is koppeling mogelijk</a></li>
+      <li><a href="https://docs.retailvista.net/apidocs/introduction-1" target="_blank" rel="noopener">Nedfox: API-documentatie Retail3000</a></li>
       <li><a href="https://retailvista.io/webshop/" target="_blank" rel="noopener">Nedfox: overzicht webshopintegraties van RetailVista</a></li>
       <li><a href="https://retailvista.io/en/partners-of-nedfox/" target="_blank" rel="noopener">Nedfox: partners van RetailVista</a></li>
       <li><a href="https://www.gardenconnect.com/ecommerce/klantenkaart-integratie" target="_blank" rel="noopener">Garden Connect: klantenkaart-integratie met RetailVista</a></li>
