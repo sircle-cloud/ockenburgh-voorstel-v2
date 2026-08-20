@@ -115,6 +115,7 @@ header .lede{color:var(--cream-soft);margin-top:22px;position:relative;z-index:1
 .bar .fill{height:100%;border-radius:11px;display:flex;align-items:center;padding:0 18px;font-weight:700;font-size:16px;color:#fff;white-space:nowrap}
 .bar .fill.s{background:linear-gradient(90deg,var(--lime),#8FCBA6);width:33%;color:var(--dark)}
 .bar .fill.m{background:linear-gradient(90deg,#C0393C,var(--coral));width:100%}
+.bar .fill.p{background:linear-gradient(90deg,#8A6502,var(--gold));width:100%;color:var(--dark)}
 .bar small{display:block;font-size:12.5px;color:var(--cream-soft);margin-top:8px}
 
 /* TIMELINE */
@@ -236,7 +237,7 @@ footer a{color:var(--cream);text-decoration:underline}
       <div class="vcard r d2">
         <span class="vic"><svg class="ic"><use href="#i-euro"/></svg></span>
         <b>± €47.000</b>
-        <span>Verschil in beheerkosten over vijf jaar, in het nadeel van Magento.</span>
+        <span>Verschil over vijf jaar tussen Shopify Advanced en Magento. Op Shopify Plus draait dat om, zie hoofdstuk 4.</span>
       </div>
       <div class="vcard r d3">
         <span class="vic"><svg class="ic"><use href="#i-server"/></svg></span>
@@ -334,7 +335,7 @@ footer a{color:var(--cream);text-decoration:underline}
         <span class="cic"><svg class="ic ic-lg"><use href="#i-cart"/></svg></span>
         <span class="tag g">Voordeel Magento</span>
         <h3>Checkout vrij aanpasbaar</h3>
-        <p>Op Magento pas je de afrekenpagina volledig aan zonder duurder abonnement. Op Shopify vragen twee wensen om Plus.</p>
+        <p>Op Magento pas je de afrekenpagina volledig aan zonder duurder abonnement. Op Shopify vragen bestellen op tijdvak en extra checkout-velden om Plus, en dat scheelt fors in de maandlasten.</p>
       </div>
       <div class="card r d3">
         <span class="cic"><svg class="ic ic-lg"><use href="#i-shield"/></svg></span>
@@ -365,30 +366,45 @@ footer a{color:var(--cream);text-decoration:underline}
     <div class="bars r">
       <div class="bar">
         <b>Shopify Advanced, vijf jaar</b>
-        <div class="track"><div class="fill s">± € 23.000</div></div>
+        <div class="track"><div class="fill s" style="width:17%">± € 23.000</div></div>
         <small>Alles inbegrepen: hosting, beveiliging, PCI-compliance, updates en opschalen tijdens het voorjaarsseizoen.</small>
       </div>
       <div class="bar">
         <b>Magento Open Source, vijf jaar</b>
-        <div class="track"><div class="fill m">± € 70.000</div></div>
+        <div class="track"><div class="fill m" style="width:52%">± € 70.000</div></div>
         <small>Conservatief gerekend met eigen hosting en tien uur onderhoud per maand. Upgradetrajecten komen daar nog bovenop.</small>
+      </div>
+      <div class="bar">
+        <b>Shopify Plus, vijf jaar</b>
+        <div class="track"><div class="fill p" style="width:100%">± € 135.000</div></div>
+        <small>Alleen nodig als bestellen op tijdvak en extra velden in het afrekenen meteen mee moeten. Ook hier is alles inbegrepen.</small>
       </div>
     </div>
 
     <div class="tblwrap r" style="margin-top:34px">
       <table class="tbl">
-        <thead><tr><th>Per jaar</th><th>Shopify Advanced</th><th>Magento Open Source</th></tr></thead>
+        <thead><tr><th>Per jaar</th><th>Shopify Advanced</th><th>Magento</th><th>Shopify Plus</th></tr></thead>
         <tbody>
-          <tr><td>Licentie of abonnement</td><td>€ 4.608</td><td>€ 0</td></tr>
-          <tr><td>Hosting</td><td class="win">inbegrepen</td><td>± € 3.000</td></tr>
-          <tr><td>Beveiliging en patches</td><td class="win">inbegrepen</td><td>± € 10.800</td></tr>
-          <tr><td>Platformupdates</td><td class="win">inbegrepen</td><td class="lose">apart traject</td></tr>
-          <tr><td>Opschalen bij seizoenspiek</td><td class="win">inbegrepen</td><td class="lose">eigen hosting</td></tr>
-          <tr class="total"><td>Totaal per jaar</td><td>± € 4.600</td><td>± € 14.000 en hoger</td></tr>
+          <tr><td>Licentie of abonnement</td><td>€ 4.608</td><td>€ 0</td><td>± € 27.000</td></tr>
+          <tr><td>Hosting</td><td class="win">inbegrepen</td><td>± € 3.000</td><td class="win">inbegrepen</td></tr>
+          <tr><td>Beveiliging en patches</td><td class="win">inbegrepen</td><td>± € 10.800</td><td class="win">inbegrepen</td></tr>
+          <tr><td>Platformupdates</td><td class="win">inbegrepen</td><td class="lose">apart traject</td><td class="win">inbegrepen</td></tr>
+          <tr><td>Opschalen bij seizoenspiek</td><td class="win">inbegrepen</td><td class="lose">eigen hosting</td><td class="win">inbegrepen</td></tr>
+          <tr><td>Transactiekosten</td><td>1,6% + € 0,25</td><td class="win">eigen keuze</td><td>1,4% + € 0,25</td></tr>
+          <tr class="total"><td>Totaal per jaar</td><td>± € 4.600</td><td>± € 14.000 en hoger</td><td>± € 27.000</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="foot-note"><svg class="ic ic-sm"><use href="#i-euro"/></svg> Aannames, bewust aan de voorzichtige kant: hosting €250 per maand en tien uur onderhoud per maand tegen €90. Internationale vergelijkingen komen voor Magento Open Source uit op $30.000 tot $80.000 per jaar wanneer alle ontwikkeluren worden meegeteld. Wij houden hier de ondergrens aan.</div>
+
+    <div class="note dark r">
+      <span class="nic"><svg class="ic ic-lg"><use href="#i-scale"/></svg></span>
+      <div>
+        <b>Eerlijk: op Shopify Plus draait het kostenvoordeel om</b>
+        <p>Willen jullie bestellen op tijdvak en extra velden in het afrekenen meteen bij de lancering, dan is Shopify Plus nodig en wordt Shopify duurder dan Magento. Over vijf jaar scheelt dat ongeveer €65.000, in het nadeel van Shopify. Dat verzwijgen we niet.<br><br>Daarom adviseren wij te starten op Advanced. Alle andere wensen, inclusief de koppeling met RetailVista, het klantaccount, spaarpunten en zakelijke accounts, draaien daarop. Die twee bezorgwensen zijn de enige reden voor Plus, en die kunnen prima later. Bij Magento is dat onderhoudsbudget geen keuze maar een vaste last, vanaf dag één.</p>
+      </div>
+    </div>
+
+    <div class="foot-note"><svg class="ic ic-sm"><use href="#i-euro"/></svg> Aannames, bewust aan de voorzichtige kant: hosting €250 per maand en tien uur onderhoud per maand tegen €90. Internationale vergelijkingen komen voor Magento Open Source uit op $30.000 tot $80.000 per jaar wanneer alle ontwikkeluren worden meegeteld. Wij houden hier de ondergrens aan. Bij hogere online omzet weegt het verschil in transactiekosten tussen Advanced en Plus mee; dat rekenen we graag door zodra jullie omzetcijfers bekend zijn.</div>
   </div>
 </section>
 
