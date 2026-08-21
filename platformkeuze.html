@@ -108,6 +108,14 @@ header .lede{color:var(--cream-soft);margin-top:22px;position:relative;z-index:1
 .blocked{background:#FDEDED;border:1px dashed #E7A9AA;border-radius:14px;padding:16px 20px;display:flex;gap:12px;align-items:flex-start;font-size:13.5px;color:#8E2E31;line-height:1.55}
 .blocked svg{color:var(--coral);margin-top:2px}
 
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:920px){.stats{grid-template-columns:1fr}}
+.stat{background:rgba(244,239,226,.06);border:1px solid var(--line-dark);border-radius:var(--radius);padding:30px 32px}
+.stat .big{display:block;font-size:clamp(34px,4vw,44px);line-height:1;color:#FF9B9D;font-weight:700;letter-spacing:-.03em}
+.stat b{display:block;font-size:15.5px;margin:13px 0 8px;color:var(--cream)}
+.stat p{font-size:13.5px;color:var(--cream-soft);line-height:1.6}
+
 /* QUOTE */
 .quote{background:#fff;border:1px solid var(--line);border-left:4px solid var(--lime);border-radius:16px;padding:30px 34px;margin-top:22px}
 .s-dark .quote{background:rgba(244,239,226,.06);border-color:var(--line-dark);border-left-color:var(--mint)}
@@ -475,7 +483,7 @@ footer a{color:var(--cream);text-decoration:underline}
       <div class="card r d3">
         <span class="cic"><svg class="ic ic-lg"><use href="#i-sprout"/></svg></span>
         <h3>Innovatie gaat elders heen</h3>
-        <p>De ontwikkeling gaat naar de betaalde Adobe-versies. Open Source krijgt vooral onderhoud.</p>
+        <p>De ontwikkeling gaat naar de betaalde Adobe-versies, Open Source krijgt vooral onderhoud. Ook de groep beschikbare Magento-developers krimpt, wat de vraag oproept wie dit over vijf jaar nog onderhoudt.</p>
       </div>
     </div>
 
@@ -489,11 +497,61 @@ footer a{color:var(--cream);text-decoration:underline}
   </div>
 </section>
 
-<!-- 06 CONVERSIE -->
+<!-- 06 BEVEILIGING -->
+<section class="sec s-dark">
+  <div class="wrap">
+    <div class="sec-head r">
+      <div class="num">06 — Beveiliging</div>
+      <h2 style="margin-top:16px">Zelf patchen is geen formaliteit.</h2>
+      <p class="lede">Dit is het onderdeel dat het makkelijkst wordt onderschat. De cijfers hieronder komen van Sansec, een onafhankelijk Nederlands securitybedrijf dat gespecialiseerd is in Magento en Adobe Commerce. Niet van Shopify, en niet van ons.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat r d1">
+        <span class="big">38%</span>
+        <b>gepatcht na zes weken</b>
+        <p>Na de noodpatch voor SessionReaper, oktober 2025, had zes weken later pas 38% van de winkels bijgewerkt. Sansec schat dat 16 tot 18 procent al een achterdeur had voordat de patch erop ging.</p>
+      </div>
+      <div class="stat r d2">
+        <span class="big">79,5%</span>
+        <b>aangevallen bij PolyShell</b>
+        <p>In maart 2026 zag Sansec aanvallen op bijna acht van de tien Magento-winkels wereldwijd. Op 30 maart werden er 471 in één uur gecompromitteerd.</p>
+      </div>
+      <div class="stat r d3">
+        <span class="big">± 5%</span>
+        <b>daadwerkelijk gehackt bij CosmicSting</b>
+        <p>In 2024 werden ruim 4.000 winkels overgenomen, op het hoogtepunt 5 tot 30 per uur. Dat was ongeveer één op de twintig Magento-winkels.</p>
+      </div>
+    </div>
+
+    <div class="note warn r" style="background:rgba(238,95,98,.12);border-left-color:var(--coral)">
+      <span class="nic" style="background:rgba(238,95,98,.18);color:#FFB3B4"><svg class="ic ic-lg"><use href="#i-block"/></svg></span>
+      <div>
+        <b style="color:var(--cream)">En patchen was bij PolyShell niet eens genoeg</b>
+        <p style="color:var(--cream-soft)">De oplossing zit alleen in versie 2.4.9 en is niet teruggezet naar 2.4.8 of 2.4.7. Veilig blijven betekende dus geen patch installeren maar een volledige versie-upgrade. Dat is precies het upgradetraject uit het vorige hoofdstuk, alleen wordt de deadline hier bepaald door de aanvaller en niet door jullie planning.</p>
+      </div>
+    </div>
+
+    <div class="grid2" style="margin-top:22px">
+      <div class="card r d1">
+        <span class="cic"><svg class="ic ic-lg"><use href="#i-scale"/></svg></span>
+        <h3>Hoe je deze cijfers moet lezen</h3>
+        <p>Dit zijn pieken rond drie specifieke kwetsbaarheden, geen permanente toestand. Het patroon is wat telt: bij elke grote Magento-kwetsbaarheid herhaalt dit zich, en of jullie winkel er dan doorheen komt hangt af van hoe snel er zelf gepatcht wordt.</p>
+      </div>
+      <div class="card yes r d2">
+        <span class="cic"><svg class="ic ic-lg"><use href="#i-shield"/></svg></span>
+        <h3>Hoe dat op Shopify werkt</h3>
+        <p>Platformupdates en beveiliging worden centraal uitgerold, zonder dat jullie iets hoeven te doen. Ook PCI-compliance voor de betaalomgeving ligt bij het platform. Bij Magento ligt die verantwoordelijkheid bij de winkelier en de hostingpartij.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 CONVERSIE -->
 <section class="sec s-paper">
   <div class="wrap">
     <div class="sec-head r">
-      <div class="num">06 — Ontwerp en conversie</div>
+      <div class="num">07 — Ontwerp en conversie</div>
       <h2 style="margin-top:16px">Het ontwerp kan op beide even mooi. De afrekenpagina niet.</h2>
       <p class="lede">Eerlijk is eerlijk: een sterke webshop ontwerpen kan op Magento net zo goed. Dat is ontwerpwerk, geen platformwerk. Het verschil zit in het enige onderdeel dat je niet zelf bouwt.</p>
     </div>
@@ -523,7 +581,7 @@ footer a{color:var(--cream);text-decoration:underline}
 <section class="sec s-sand">
   <div class="wrap">
     <div class="sec-head r">
-      <div class="num">07 — Productdatabeheer</div>
+      <div class="num">08 — Productdatabeheer</div>
       <h2 style="margin-top:16px">Een PIM is geen reden om voor Magento te kiezen.</h2>
       <p class="lede">Een PIM staat los van je webshopplatform. Dat is precies het idee erachter: één centrale bron die alle kanalen voedt. De drie bekendste hebben allemaal een eigen Shopify-koppeling.</p>
     </div>
@@ -540,7 +598,7 @@ footer a{color:var(--cream);text-decoration:underline}
 <section class="sec s-paper">
   <div class="wrap">
     <div class="sec-head r">
-      <div class="num">08 — Alles op een rij</div>
+      <div class="num">09 — Alles op een rij</div>
       <h2 style="margin-top:16px">Tien punten naast elkaar.</h2>
       <p class="lede">Zonder franje. Groen is een voordeel, geel vraagt maatwerk, rood is een nadeel.</p>
     </div>
@@ -558,8 +616,10 @@ footer a{color:var(--cream);text-decoration:underline}
           <tr><td>Te beheren zonder vaste specialist</td><td><span class="mark ok">✓</span></td><td><span class="mark nok">✕</span></td></tr>
           <tr><td>Voorspelbare jaarlijkse kosten</td><td><span class="mark ok">✓</span></td><td><span class="mark nok">✕</span></td></tr>
           <tr><td>Koppeling met een PIM mogelijk</td><td><span class="mark ok">✓</span></td><td><span class="mark ok">✓</span></td></tr>
+          <tr><td>Beveiligingspatches centraal uitgerold</td><td><span class="mark ok">✓</span></td><td><span class="mark nok">✕</span></td></tr>
+          <tr><td>Uitbreidingen zonder developer te installeren</td><td><span class="mark ok">✓</span></td><td><span class="mark nok">✕</span></td></tr>
         </tbody>
-        <tfoot><tr><td>Geteld</td><td>7 groen · 2 geel · 1 rood</td><td>3 groen · 7 rood</td></tr></tfoot>
+        <tfoot><tr><td>Geteld</td><td>9 groen · 2 geel · 1 rood</td><td>3 groen · 9 rood</td></tr></tfoot>
       </table>
     </div>
     <div class="foot-note"><svg class="ic ic-sm"><use href="#i-question"/></svg> De klantenpas staat bij Shopify op geel omdat wij die koppeling zelf bouwen, en dat is begroot. Bij Magento staat hij op rood omdat de standaardintegratie hem niet levert.</div>
@@ -570,7 +630,7 @@ footer a{color:var(--cream);text-decoration:underline}
 <section class="sec s-dark">
   <div class="wrap">
     <div class="sec-head r">
-      <div class="num">09 — Waar het op neerkomt</div>
+      <div class="num">10 — Waar het op neerkomt</div>
       <h2 style="margin-top:16px">Vier punten voor de afweging.</h2>
     </div>
     <div class="grid2">
@@ -614,6 +674,9 @@ footer a{color:var(--cream);text-decoration:underline}
       <li><a href="https://retailvista.io/webshop/" target="_blank" rel="noopener">Nedfox: overzicht webshopintegraties van RetailVista</a></li>
       <li><a href="https://retailvista.io/en/partners-of-nedfox/" target="_blank" rel="noopener">Nedfox: partners van RetailVista</a></li>
       <li><a href="https://www.gardenconnect.com/ecommerce/klantenkaart-integratie" target="_blank" rel="noopener">Garden Connect: klantenkaart-integratie met RetailVista</a></li>
+      <li><a href="https://sansec.io/research/magento-polyshell" target="_blank" rel="noopener">Sansec: PolyShell, ongecontroleerde bestandsupload in Magento en Adobe Commerce</a></li>
+      <li><a href="https://sansec.io/research/sessionreaper-exploitation" target="_blank" rel="noopener">Sansec: SessionReaper-aanvallen gestart, 3 op de 5 winkels nog kwetsbaar</a></li>
+      <li><a href="https://sansec.io/research/cosmicsting" target="_blank" rel="noopener">Sansec: CosmicSting, aanval en verdediging</a></li>
       <li><a href="https://magento.watch/" target="_blank" rel="noopener">Magento-versies, einddata en systeemeisen</a></li>
       <li><a href="https://www.ontapgroup.com/blog/adobe-commerce-2-4-5-and-2-4-6-lose-support" target="_blank" rel="noopener">Adobe Commerce 2.4.5 en 2.4.6 verliezen support</a></li>
       <li><a href="https://spoko.space/blog/magento-open-source-end-of-support/" target="_blank" rel="noopener">Magento Open Source en het einde van support</a></li>
