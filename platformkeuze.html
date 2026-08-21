@@ -56,6 +56,16 @@ em{font-style:normal;color:var(--lime)}
 .ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .ic-sm{width:15px;height:15px} .ic-lg{width:24px;height:24px}
 
+/* TOPBAR */
+#topbar{position:sticky;top:0;z-index:60;background:var(--dark);border-bottom:1px solid var(--line-dark);padding:13px 0}
+#topbar .bar-in{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:16px}
+#topbar .tb-brand{display:flex;align-items:center;gap:12px;min-width:0}
+#topbar .tb-brand img{height:22px;flex:none}
+#topbar .tb-brand small{font-size:12px;letter-spacing:.05em;color:var(--cream-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#topbar .tb-back{display:inline-flex;align-items:center;gap:8px;background:var(--cream);color:var(--dark);font-weight:700;font-size:13.5px;padding:10px 18px;border-radius:100px;text-decoration:none;transition:.25s;flex:none}
+#topbar .tb-back:hover{background:var(--mint)}
+@media(max-width:560px){#topbar .tb-brand small{display:none}#topbar .tb-back{font-size:12.5px;padding:9px 15px}}
+
 /* HEADER */
 header{background:var(--dark);color:var(--cream);padding:clamp(40px,5vw,60px) 0 clamp(54px,7vw,86px);position:relative;overflow:hidden}
 header:after{content:"";position:absolute;right:-140px;top:-140px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(143,203,166,.13),transparent 68%)}
@@ -239,12 +249,18 @@ footer a{color:var(--cream);text-decoration:underline}
 </defs>
 </svg>
 
-<header>
-  <div class="wrap">
-    <div class="hbrand">
+<nav id="topbar">
+  <div class="bar-in">
+    <div class="tb-brand">
       <img src="assets/sircle-white.svg" alt="Sircle Agency">
       <small>× Tuincentrum Ockenburgh</small>
     </div>
+    <a class="tb-back" href="index.html"><svg class="ic ic-sm"><use href="#i-arrow-l"/></svg> Terug naar het voorstel</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
     <div class="eyebrow"><span class="bar"></span> Platformvergelijking · augustus 2026</div>
     <h1>Shopify of <em>Magento?</em></h1>
     <p class="lede">RetailVista heeft een kant-en-klare koppeling met Magento. Wij zochten uit wat die doet, wat beide platformen kosten, en waar Magento wint.</p>
